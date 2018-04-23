@@ -20,6 +20,7 @@
 @media screen and (max-width: 700px) {
 	.hero-body {
 		background-color: blue;
+		max-height: calc(100vh - 52px);
 	}
 
 	#hero {
@@ -32,21 +33,33 @@
 /*desktop*/
 @media screen and (max-width: 1100px) {
 	#hero {
-		height: 100vh;
+		height: calc(100vh - 52px);
 		width: auto;
 		max-width: unset;
 	}
 }
 
 #hero {
+	height: auto;
 	filter: brightness(.5) blur(1px);
 }
 
+.hero-body {
+	overflow: hidden;
+	background-color: black;
+	height: calc(100vh - 52px);
+}
 
 #logo {
 	position: absolute;
 	top: 50vh;
 	left: 50vw;
-	transform: translateX(-50%) translateY(50%);
-	height: 50vh;
+	transform: translateX(-50%) translateY(-50%);
+	height: 90vh;
+}
+
+.sticky {
+	position: fixed;
+	top: 0;
+	width: 100%;
 }

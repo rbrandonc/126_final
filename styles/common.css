@@ -1,17 +1,6 @@
 /*Primary Color: #14284b*/
 /*Secondary Color: #7badd5*/
 
-.sticky {
-	position: fixed;
-	top: 0;
-	width: 100%;
-}
-
-.is-primary {
-	background-color: #14284b !important;
-	color: white !important;
-}
-
 h1 {
 
 }
@@ -22,4 +11,13 @@ h2 {
 
 h3 {
 
+}
+
+.tabs a {
+	color: white;
+}
+
+.is-primary {
+	background-color: #14284b !important;
+	color: white !important;
 }
