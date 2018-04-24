@@ -19,7 +19,10 @@ document.addEventListener("DOMContentLoaded", function(event) {
             <ul>
               <li id='index'><a href="index.html">Home</a></li>
               <li id='aboutUs'><a href="aboutUs.html">About Us</a></li>
-              <li id='link'><a href="">Link</a></li>
+              <li id='officers'><a href="officers.html">Officers</a></li>
+              <li id='faq'><a href="faq.html">FAQ</a></li>
+              <li id='photos'><a href="photos.html">Photos</a></li>
+              <li id='contact'><a href="contact.html">Contact</a></li>
             </ul>
           </div>
         </div>
