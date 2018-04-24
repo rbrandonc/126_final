@@ -31,4 +31,9 @@ h3 {
 /*White nav links */
 .tabs a {
 	color: white;
+
+}
+
+.tabs a:hover {
+	color: black;
 }
