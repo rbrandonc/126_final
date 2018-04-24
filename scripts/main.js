@@ -3,7 +3,7 @@ document.addEventListener("DOMContentLoaded", function(event) {
   <nav class="navbar is-primary has-text-white" id='nav'>
     <div class="container">
       <div class="navbar-brand">
-        <a class="navbar-item has-text-weight-bold is-uppercase" href="../">
+        <a class="navbar-item has-text-weight-bold is-uppercase" href="index.html">
           Carolina Barbell
         </a>
         <span class="navbar-burger burger" data-target="navbarMenu">
