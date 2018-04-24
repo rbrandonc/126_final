@@ -17,9 +17,9 @@ document.addEventListener("DOMContentLoaded", function(event) {
         <div class="navbar-end">
           <div class="tabs is-right">
             <ul>
-              <li class="is-active"><a>Home</a></li>
-              <li><a href="aboutUs.html">About Us</a></li>
-              <li><a href="">Link</a></li>
+              <li id='index'><a href="index.html">Home</a></li>
+              <li id='aboutUs'><a href="aboutUs.html">About Us</a></li>
+              <li id='link'><a href="">Link</a></li>
             </ul>
           </div>
         </div>
@@ -27,6 +27,9 @@ document.addEventListener("DOMContentLoaded", function(event) {
     </div>
   </nav>
   `
+
+  var element = window.location.pathname.split('/').pop().split('.')[0];
+  document.getElementById(element).classList.add('is-active');
 
   // Detect scroll
   window.onscroll = function() {stick()};
