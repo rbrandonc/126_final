@@ -1,0 +1,9 @@
+img {
+	width: 100% !important;
+	height: auto !important;
+}
+
+.card-header {
+	height: 50vh !important;
+	overflow: hidden;
+}

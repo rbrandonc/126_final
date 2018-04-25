@@ -3,7 +3,7 @@ document.addEventListener("DOMContentLoaded", function(event) {
   <nav class="navbar is-primary has-text-white" id='nav'>
     <div class="container">
       <div class="navbar-brand">
-        <a class="navbar-item has-text-weight-bold is-uppercase" href="../">
+        <a class="navbar-item has-text-weight-bold is-uppercase" href="index.html">
           Carolina Barbell
         </a>
         <span class="navbar-burger burger" data-target="navbarMenu">
@@ -17,9 +17,12 @@ document.addEventListener("DOMContentLoaded", function(event) {
         <div class="navbar-end">
           <div class="tabs is-right">
             <ul>
-              <li class="is-active"><a>Home</a></li>
-              <li><a href="aboutUs.html">About Us</a></li>
-              <li><a href="">Link</a></li>
+              <li id='index'><a href="index.html">Home</a></li>
+              <li id='aboutUs'><a href="aboutUs.html">About Us</a></li>
+              <li id='officers'><a href="officers.html">Officers</a></li>
+              <li id='faq'><a href="faq.html">FAQ</a></li>
+              <li id='photos'><a href="photos.html">Photos</a></li>
+              <li id='contact'><a href="contact.html">Contact</a></li>
             </ul>
           </div>
         </div>
@@ -27,6 +30,9 @@ document.addEventListener("DOMContentLoaded", function(event) {
     </div>
   </nav>
   `
+
+  var element = window.location.pathname.split('/').pop().split('.')[0];
+  document.getElementById(element).classList.add('is-active');
 
   // Detect scroll
   window.onscroll = function() {stick()};

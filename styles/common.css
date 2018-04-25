@@ -16,11 +16,24 @@ h3 {
 
 }
 
-.tabs a {
-	color: white;
-}
-
 .is-primary {
 	background-color: #14284b !important;
 	color: white !important;
+}
+
+/* Black nav links on mobile */
+@media screen and (max-width: 1086px) {
+	#navGoesHere .tabs li:not(.is-active) a{
+		color: black
+	}
+}
+
+/*White nav links */
+.tabs a {
+	color: white;
+
+}
+
+.tabs a:hover {
+	color: black;
 }
