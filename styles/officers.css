@@ -1,4 +1,8 @@
-img {
+.fa img {
+	width: 40px;
+	height: 40px;	
+ }
+.card-header img {
 	width: 100% !important;
 	height: auto !important;
 }
@@ -7,3 +11,4 @@ img {
 	height: 50vh !important;
 	overflow: hidden;
 }
+
